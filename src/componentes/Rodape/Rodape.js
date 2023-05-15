@@ -12,7 +12,7 @@ export const Rodape = () => {
             </ul>
         </section>
         <section>
-            <img className='logo' src="/imagens/logo.png" alt="" />
+            <img className='logo' src="/imagens/giphy.gif" alt="" />
         </section>
         <section>
             <p>
