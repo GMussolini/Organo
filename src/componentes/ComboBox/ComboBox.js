@@ -1,12 +1,12 @@
 import './ComboBox.css'
 
-export const ComboBox = (props) => {
+export const ComboBox = ({label, aoAlterado, valor, obrigatorio = false, itens}) => {
     return (
         <div className='combo-box'>
-            <label>{props.label}</label>
-            <select onChange={e => props.aoAlterado(e.target.value) } value={props.valor} required={props.obrigatorio}>
+            <label>{label}</label>
+            <select onChange={e => aoAlterado(e.target.value) } value={valor} required={obrigatorio}>
                 <option value=""></option>
-                {props.itens.map(x => <option key={x}>{x}</option>)}
+                {itens.map(x => <option key={x.id}>{x.nome}</option>)}
             </select>
         </div>
     )
